@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header h1{
+    font-family: "Inconsolata", sans-serif;
+    font-weight: bold;
+    padding: 44px 0 0 77px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    padding: 0 77px ;
+}
+main .box-img{
+    width: 576px;
+}
+
+
+main .box-img img{
+
+    width: 100%;
+}
+
+main .box-infos{
+    justify-self: center;
+    align-self: center;
+}
+
+main h1{
+    font-size: 50px;
+    font-weight: 700;
+    width: 500px;
+}
+
+main p{
+    width: 318px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 36px;
+    color: #4f4f4f;
+}
+
+main a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+footer p{
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    color: #bdbdbd;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p strong{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    header h1{
+        padding: 20px 0 0 24px;
+    }
+    
+    main{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 0 24px ;
+    }
+
+    main .box-img {
+        width: 80%;
+        padding-top: 1em;
+        justify-self: center;
+    }
+
+    main h1{
+        font-size: 45px;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    main p {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
